@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #640404;
+}
+
+h1 {
+    color: #fff;
+    background-color: #3b90d5;
+    padding: 100px;
+}
+
+p {
+    color: #fff;
+    background-color: #3b90d5;
+    padding: 20px;
+}
