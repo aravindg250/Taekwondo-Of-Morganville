@@ -19,34 +19,33 @@
   
     <form action="{% url 'contact' %}" method="post">
       {% csrf_token %}
-      <label for="customerName">NAME <em>&#x2a;</em></label>
+      <label for="customerName">NAME <em>&#x2a;</em></label> 
       <input
         id="customerName"
-        name="customerName"
+        name="name"
         required=""
         type="text"
       />
       <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
       <input
         id="customerEmail"
-        name="customerEmail"
+        name="email"
         required=""
         type="email"
       />
       <label for="customerPhone">PHONE</label>
       <input
         id="customerPhone"
-        name="customerPhone"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        name="number"
         type="tel"
         />
       <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
       <textarea
         id="customerNote"
-        name="customerNote"
+        name="message"
         required=""
         rows="4"
-      ></textarea>
+      ></textarea> 
       <div>
         <button type="submit" class="btn dento-btn">Send Message</button>
       </div>

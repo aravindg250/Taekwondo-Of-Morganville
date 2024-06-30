@@ -1,0 +1,36 @@
+/* @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+    font-family: "Spartan";
+	font-weight: 800;
+} */
+.home {
+    background-color: #48626e;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    .title {
+        margin: 0px;
+        font-size: 8em;
+        /* text-shadow: rgb(160, 199, 201) 0px 0px 10px; */
+        /* text-shadow: #FFFF 5px 0px 10px; */
+    }
+    .motto {
+        padding-top: 60px;
+        font-size: 1.5em;
+        text-shadow: #fc0 1px 0 10px;
+    }
+
+}
