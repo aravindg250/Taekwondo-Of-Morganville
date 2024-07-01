@@ -48,21 +48,21 @@ nav li {
 }
 
 nav a {
-  color: #000000;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
 }
 
 nav a:hover {
-  color: #000;
+  color: white;
 }
 
 nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #000000;
+  background-color: white;
 
   position: absolute;
   top: 0;
