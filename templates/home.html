@@ -1,20 +1,38 @@
 {% extends 'base.html' %} {% load static %} {% block title %} Taekwondo School
 {% endblock %} {% block stylesheet %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
-{% endblock %} {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+{% endblock %}
 
-<div class="home">
-  <h1 class="title">Taekwondo Of Morganville</h1>
-  <p class="motto">
-    Traditional South Korean Martial Arts and Physical Fitness Center
-  </p>
+{% block content %}
+
+<div class="container">
+  <h1>TaeKwonDo Of Morganville</h1>
+  <p>The Greatest Taekwondo School In the World</p>
+  <a href="#features" class="cta-button">Learn More</a>
 </div>
-
-<p>
-  Our school is dedicated to the promotion of traditional martial arts and
-  physical fitness. We offer a variety of classes for all ages and skill levels.
-</p>
-<div class='gallery'>
-  
+<div class="container" id="features">
+  <h1>Features</h1>
+  <div class="features">
+    <div class="feature-item">
+      <h2>Feature 1</h2>
+      <p>Detail about Feature 1.</p>
+    </div>
+    <div class="feature-item">
+      <h2>Feature 2</h2>
+      <p>Detail about Feature 2.</p>
+    </div>
+    <div class="feature-item">
+      <h2>Feature 3</h2>
+      <p>Detail about Feature 3.</p>
+    </div>
+  </div>
+  <div class="logos">
+    <img src="https://via.placeholder.com/100" alt="Logo 1">
+    <img src="https://via.placeholder.com/100" alt="Logo 2">
+    <img src="https://via.placeholder.com/100" alt="Logo 3">
+    <img src="https://via.placeholder.com/100" alt="Logo 4">
+  </div>
+</div>
 </div>
 {% endblock %}

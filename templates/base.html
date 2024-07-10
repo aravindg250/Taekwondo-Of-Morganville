@@ -3,51 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Taekwondo School{% endblock %}</title>
-
+    <title>{% block title %}TaeKwonDo Of Morganville{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    {% comment %}
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    {% endcomment %} {% load static %}
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/styles.css' %}"
-    />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/white_black_border.png' %}"/>
     {% block stylesheet %} {% endblock %}
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="/"
-          ><img class="logo" src="{% static 'img/NEW_LOGO.png' %}" alt="Logo"
-        /></a>
-
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="navbar" id="navbar">
+        <div class="logo">
+          <a href="/" style="font-size: 20px;"><img class="TKD_LOGO" src="{% static 'img/white_black_border.png' %}" alt="Logo"/></a>
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="#">Services</a>
+          <a href="/contact">Contact</a>
+        </div>
       </div>
-    </header>
+ 
     {% block content %} {% endblock %}
-
     <div class="wrapper">
-      <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
-      <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/taekwondoofmorganville/" class="icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/taekwondo-of-morganville/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@TKDmorganville" class="icon"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://x.com/TKDMorganville" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/TKDMorganville" class="icon"><i class="fa-brands fa-facebook"></i></a>
     </div>
 
+
   </body>
-  <footer class="foot">
-    <p>Copyright &copy; 2024 Taekwondo Of Morganville. All Rights Reserved</p>
+  <footer>
+    <p>Copyright &copy; 2024 TaeKwonDo Of Morganville. All Rights Reserved</p>
   </footer>
 </html>

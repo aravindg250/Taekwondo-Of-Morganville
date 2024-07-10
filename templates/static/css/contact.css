@@ -1,24 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat; */
-  /* background-size: cover; */
-  /* width: 100vw; */
-  height: 100vh;
-  /* display: inline; */
-  align-items: center;
-  justify-items: center;
-  font-size: 12pt;
-  /* font-family: "Spartan"; */
-  color: white;
+  background-color: black;
 }
-
 .contact-us {
-  background: #48626e;
   padding: 50px 100px;
   height: 100vh;
 }
@@ -101,8 +84,12 @@ input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
-  border: 1px solid #6bd4b1;
+  border: 1px solid black;
   -webkit-text-fill-color: #2A293E;
   -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.screen {
+  margin-top: 110px;
 }

@@ -1,121 +1,51 @@
-/* @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap"); */
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-    /* font-family: "Spartan"; */
-	font-weight: 800;
-    
-}
-.home {
-    /* background-color: #48626e; */
-    background-image: url("../img/tkd4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-    
-    text-align: center;
-    margin-top: 0px;
-    padding-top: 0px;
-    height: 100vh;
+/* Taekwondo-Of-Morganville\staticfiles\css\home.css */  
+  .home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     text-shadow: #000 0px 0px 20px;
-    .title {
-        margin: 0px;
-        font-size: 8em;
-        /* text-shadow: rgb(160, 199, 201) 0px 0px 10px; */
-        
-    }
-    .motto {
-        padding-top: 60px;
-        font-size: 1.5em;
-    }
-
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .icon {
-    text-decoration: none;
-    width: 5.625rem;
-    height: 5.625rem;
-    border-radius: 14px;
-    /* background-color: hsla(209 20% 70% / 20%); */ /* For dark theme */
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    margin-bottom: 30px;
   }
   
-  .icon > i {
-    color: #2dd4bf;
-    font-size: 1.5rem;
-    transition: all 0.2s;
-  }
-  
-  .icon:hover > i {
-    scale: 1.2;
-    color: #f1f1f1;
-  }
-  
-  .icon:before {
-    background: var(--color);
-    content: "";
+  .background-overlay {
     position: absolute;
-    width: 130%;
-    height: 130%;
-    left: -110%;
-    top: 80%;
-    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/tkd5.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1;
   }
   
-  .icon:hover:before {
-    animation: slide 0.7s forwards;
+  .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    width: auto;
+    z-index: 0;
   }
   
-  @keyframes slide {
-    50% {
-      left: 10%;
-      top: -40%;
-    }
-  
-    100% {
-      left: -15%;
-      top: -15%;
-    }
+  .title {
+    z-index: 1;
+    margin: 0;
+    font-size: 8em;
+    text-align: center;
   }
   
-  .icon:has(.fa-instagram) {
-    --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  .motto {
+    z-index: 1;
+    padding-top: 60px;
+    font-size: 1.5em;
+    text-align: center;
   }
-  .icon:has(.fa-linkedin-in) {
-    --color: #0077b5;
-  }
-  .icon:has(.fa-youtube) {
-    --color: #ff0000;
-  }
-  .icon:has(.fa-x-twitter) {
-    --color: #1da1f2;
-  }
-  .icon:has(.fa-facebook) {
-    --color: #316FF6;
-  }
+  

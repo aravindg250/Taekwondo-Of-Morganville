@@ -34,7 +34,7 @@ def contact_view(request):
         # Phone:\n\t\t{}\n
         # '''.format(form_data['name'], form_data['message'], form_data['email'],form_data['phone'])
         
-        message = "Someone is interested in taekwondo!"
-        send_mail('You got a mail!', message, '', ['aravindg.usa@gmail.com'], fail_silently=False, html_message=html) # TODO: enter your email address
+        subject = "TaeKwonDo Of Morganville Website Contact Form: " + name
+        send_mail(subject, message, '', ['aravindg.usa@gmail.com', 'taekwondoofmorganville@aol.com'], fail_silently=False, html_message=html) # TODO: enter your email address
         
     return render(request, 'contact.html', {})   
