@@ -1,58 +1,44 @@
-{% extends 'base.html' %} 
-{% load static %} 
-
-{% block stylesheet %}
+{% extends 'base.html' %} {% load static %} {% block stylesheet %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" />
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <div class="screen">
-<div class="col-12 col-md-8">
-  <div class="contact-form">
-    <!-- Section Heading -->
+  <div class="blocks">
+  <div class="col-12 col-md-8">
+    
+    <div class="contact-form">
+      <!-- Section Heading -->
+      <div class="contact-us">
+        <div class="section-heading">
+          <h2>Get In Touch</h2>
+          <div class="line"></div>
+        </div>
 
-    <div class="contact-us">
-    <div class="section-heading">
-      <h2>Get In Touch</h2>
-      <div class="line"></div>
-    </div>
-
-  
-    <form action="{% url 'contact' %}" method="post">
-      {% csrf_token %}
-      <label for="customerName">NAME <em>&#x2a;</em></label> 
-      <input
-        id="customerName"
-        name="name"
-        required=""
-        type="text"
-      />
-      <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
-      <input
-        id="customerEmail"
-        name="email"
-        required=""
-        type="email"
-      />
-      <label for="customerPhone">PHONE</label>
-      <input
-        id="customerPhone"
-        name="number"
-        type="tel"
-        />
-      <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
-      <textarea
-        id="customerNote"
-        name="message"
-        required=""
-        rows="4"
-      ></textarea> 
-      <div>
-        <button type="submit" class="btn dento-btn">Send Message</button>
+        <form action="{% url 'contact' %}" method="post">
+          {% csrf_token %}
+          <label for="customerName">NAME <em>&#x2a;</em></label>
+          <input id="customerName" name="name" required="" type="text" />
+          <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+          <input id="customerEmail" name="email" required="" type="email" />
+          <label for="customerPhone">PHONE</label>
+          <input id="customerPhone" name="number" type="tel" />
+          <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
+          <textarea
+            id="customerNote"
+            name="message"
+            required=""
+            rows="4"
+          ></textarea>
+          <div>
+            <button type="submit" class="btn dento-btn">Send Message</button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
-</div>
-</div>
-{% endblock %}
+    <div class="blocks">
+      <img class="contactIMG" src="{% static 'img/tkd1.jpg' %}" alt="image" />
+    </div>
+  </div>
 
+  {% endblock %}
+</div>

@@ -5,7 +5,7 @@ body, html {
   min-height: 100%;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #0d0d2b, #000000);
+  background: black;
   color: white;
   scroll-behavior: smooth;
 }
@@ -47,10 +47,11 @@ img.TKD_LOGO{
   align-items: center;
   transition: background 0.3s, color 0.1s, top 0.3s, left 0.3s, right 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s;
   z-index: 1000;
+  text-shadow: black 0px 0px 10px;
 }
 
 .navbar.sticky {
-  background: #0C0C27;
+  background-color: black;
   color: white;
   top: 0;
   left: 0;

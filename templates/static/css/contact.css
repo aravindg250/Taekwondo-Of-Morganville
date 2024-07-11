@@ -2,8 +2,10 @@ body {
   background-color: black;
 }
 .contact-us {
-  padding: 50px 100px;
+  padding: 50px;
   height: 100vh;
+  border: blue 2px dashed;
+  width: 500px;
 }
 
 label, input, textarea {
@@ -92,4 +94,22 @@ textarea:-webkit-autofill:focus {
 
 .screen {
   margin-top: 110px;
+}
+
+.blocks {
+  border: white 2px dashed; 
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+img.contactIMG {
+  width: 700px;
+  height: auto;
+  padding-bottom: 400px;
+}
+
+form {
+  width:1300px;
 }
