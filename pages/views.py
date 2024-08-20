@@ -12,6 +12,9 @@ def home_view(request):
 def about_view(request):
     return render(request, 'about.html', {})
 
+def stripe_view(request):
+    return render(request, 'stripe.html', {})
+
 def contact_view(request):
     
     if request.method == 'POST':
