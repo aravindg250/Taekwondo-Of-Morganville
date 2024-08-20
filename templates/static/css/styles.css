@@ -43,11 +43,12 @@ img.TKD_LOGO{
   margin: 0 60px;
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 30px;
   align-items: center;
   transition: background 0.3s, color 0.1s, top 0.3s, left 0.3s, right 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s;
   z-index: 1000;
   text-shadow: black 0px 0px 10px;
+
 }
 
 .navbar.sticky {
@@ -67,6 +68,7 @@ img.TKD_LOGO{
   font-weight: 600;
   margin: 0 15px;
   transition: color 0.3s;
+  font-size: 20px;
 }
 
 .container {
